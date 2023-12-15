@@ -6,7 +6,7 @@ const getRound = () => {
   let resultRound;
   let numberConvert;
   console.log(`Question: ${number}`);
-  const answer = readlineSync.question('Your answer: ').trim();
+  const answer = readlineSync.question('Your answer: ').trim().toLowerCase();
   if (number % 2 === 0) {
     numberConvert = 'yes';
   } else numberConvert = 'no';
