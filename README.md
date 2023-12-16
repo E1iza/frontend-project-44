@@ -4,3 +4,4 @@
 
 Game brain-even: https://asciinema.org/a/atQi51jDamkAvKVlZPUIMC7rk
 Game brain-calc: https://asciinema.org/a/lLt0TlJP1IsyNFJkp99FQGMey
+Game brain-gcd: https://asciinema.org/a/cI6pQyBUaeopHoRQrDAqplUC9
