@@ -10,3 +10,5 @@ Game brain-gcd:
 https://asciinema.org/a/cI6pQyBUaeopHoRQrDAqplUC9
 Game brain-progression:
 https://asciinema.org/a/SJvfQ0oMpzEUjOr6NDOpAPQeV
+Game brain-prime:
+https://asciinema.org/a/fLMojqpr3fqzGqGsnxuafJV2z

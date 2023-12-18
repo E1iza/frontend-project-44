@@ -53,3 +53,14 @@ export const getProgression = (step = [-15, 15], start = [-100, 100], count = 10
   progression[indexItemSkip] = '..';
   return [progression.join(' '), itemSkip];
 };
+function isPrime(num) {
+  for (let i = 2; i < num; i += 1) {
+    if (num % i === 0) return false;
+  }
+  return num !== 1;
+}
+export const getOneNumber = (max = 500) => {
+  const number = getNumberRandom(2, max);
+  const answer = isPrime(number) ? 'yes' : 'no';
+  return [number, answer];
+};
