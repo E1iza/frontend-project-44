@@ -40,12 +40,12 @@ export const getGcd = () => {
   const answer = min;
   return [expression, answer];
 };
-export const getProgression = (step = [-15, 15], start = [-100, 100], count = 10) => {
+export const getProgression = (step = [-15, 15], startInterval = [-100, 100], countItems = 10) => {
   const stepValue = getNumberRandom(step[0], step[1]);
-  const startValue = getNumberRandom(start[0], start[1]);
-  const countValue = getNumberRandom(5, count);
-  const progression = [startValue];
-  for (let i = 0; i < countValue; i += 1) {
+  const startItem = getNumberRandom(startInterval[0], startInterval[1]);
+  const countItemsValue = getNumberRandom(5, countItems);
+  const progression = [startItem];
+  for (let i = 0; i < countItemsValue; i += 1) {
     progression.push(progression[i] + stepValue);
   }
   const indexItemSkip = getNumberRandom(0, progression.length - 1);

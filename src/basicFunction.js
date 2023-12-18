@@ -12,10 +12,10 @@ export const getRound = (gameFunction) => {
   return [resultRound, resultRound === 'Correct!'];
 };
 
-export const playGame = (messageRules, gameFunction) => {
+export const playGame = (messageRules, gameFunction, countRound = 3) => {
   const name = getGreeting();
   console.log(messageRules);
-  for (let i = 0; i < 3; i += 1) {
+  for (let i = 0; i < countRound; i += 1) {
     const [message, resultRound] = getRound(gameFunction);
     console.log(message);
     if (!resultRound) {
