@@ -1,23 +1,22 @@
-import readlineSync, { question } from 'readline-sync';
+import readlineSync from 'readline-sync';
 import getGreeting from './cli.js';
 
-const getRound = (gameFunction, isAnswerRight) => {
-  const question = gameFunction();
+export const getRound = (gameFunction) => {
+  const [quest, correctAnswer] = gameFunction();
   let resultRound;
-  console.log(`Question: ${question}`);
+  console.log(`Question: ${quest}`);
   const answer = readlineSync.question('Your answer: ').trim().toLowerCase();
-  const correctAnswer = isAnswerRight(question).toString();
-  if (correctAnswer === answer) {
+  if (correctAnswer.toString() === answer) {
     resultRound = 'Correct!';
   } else resultRound = `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`;
   return [resultRound, resultRound === 'Correct!'];
 };
 
-export const playGame = (messageRules, gameFunction, isAnswerRight) => {
+export const playGame = (messageRules, gameFunction) => {
   const name = getGreeting();
   console.log(messageRules);
   for (let i = 0; i < 3; i += 1) {
-    const [message, resultRound] = getRound(gameFunction, isAnswerRight);
+    const [message, resultRound] = getRound(gameFunction);
     console.log(message);
     if (!resultRound) {
       console.log(`Let's try again, ${name}!`);
