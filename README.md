@@ -4,15 +4,15 @@
 
 Проект содержит 5 математических консольных игр.
 1) Game brain-even: игра на определение четности числа.
-![even.gif](/home/stell/agg/even.gif)
+![even](https://github.com/E1iza/frontend-project-44/assets/74045567/3673e916-3332-447e-874b-0e99acc4d47f)
 2) Game brain-calc: игра на нахождение результата математического выражения.
-![calc.gif](/home/stell/agg/calc.gif)
+![calc](https://github.com/E1iza/frontend-project-44/assets/74045567/a930e1f3-b3b8-4b47-bdc4-cb39860f389c)
 3) Game brain-gcd: игра на нахождение наибольшего общего делителя двух чисел.
-![gcd.gif](/home/stell/agg/gcd.gif)
+![gcd](https://github.com/E1iza/frontend-project-44/assets/74045567/a80d9497-257a-4093-85dc-d6636ae9f3fa)
 4) Game brain-progression: игра на нахождение пропущенного числа в арифметической прогрессии.
-![progression.gif](/home/stell/agg/progression.gif)
+![progression](https://github.com/E1iza/frontend-project-44/assets/74045567/fc305f95-2971-4550-ac2a-d3f37980c15c)
 5) Game brain-prime: игра на определение, является ли число простым.
-![prime.gif](..%2F..%2Fagg%2Fprime.gif)
+![prime](https://github.com/E1iza/frontend-project-44/assets/74045567/12d1e445-ad09-4892-b01a-6c72ca240c26)
 
 Для запуска проекта выполните следующие действия:
 1) Скопируйте репозиторий командой git clone.
