@@ -14,6 +14,15 @@ https://asciinema.org/a/SJvfQ0oMpzEUjOr6NDOpAPQeV
 5) Game brain-prime: игра на определение, является ли число простым.
 https://asciinema.org/a/fLMojqpr3fqzGqGsnxuafJV2z
 
-Для запуска проекта выполните запуск следующих команд из корневой директории проекта:
-make publish
-npm link
+Для запуска проекта выполните следующие действия:
+1) Скопируйте репозиторий командой git clone.
+2) Выполните запуск следующих команд из корневой директории проекта:
+- make install;
+- make publish;
+- npm link.
+3) Запустите желаемую игру одной из команд:
+- brain-calc;
+- brain-even;
+- brain-gcd;
+- brain-prime;
+- brain-progression
