@@ -1,4 +1,4 @@
-import getNumberRandom from '../supportFunction.js';
+import getNumberRandom from '../utils.js';
 
 export default function getNumber() {
   const expression = getNumberRandom();

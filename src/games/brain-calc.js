@@ -1,4 +1,4 @@
-import getNumberRandom from '../supportFunction.js';
+import getNumberRandom from '../utils.js';
 
 const calculateStringOperator = (a, b, operator) => {
   switch (operator) {
@@ -9,7 +9,7 @@ const calculateStringOperator = (a, b, operator) => {
     case '*':
       return a * b;
     default:
-      return a + b;
+      return false;
   }
 };
 export default function getExpressionRandom() {
@@ -19,5 +19,9 @@ export default function getExpressionRandom() {
   const operatorRandom = operators[getNumberRandom(0, operators.length - 1)];
   const expression = `${number1} ${operatorRandom} ${number2}`;
   const answer = calculateStringOperator(number1, number2, operatorRandom);
+  if (!answer) {
+    console.log('Оператор не определен');
+    return false;
+  }
   return [expression, answer];
 }
