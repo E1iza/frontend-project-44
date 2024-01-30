@@ -1,5 +1,5 @@
 import getNumberRandom from '../utils.js';
-import { playGame } from '../index.js';
+import playGame from '../index.js';
 
 function getProgression(step = [-15, 15], startInt = [-100, 100], countItems = 10) {
   const stepValue = getNumberRandom(step[0], step[1]);

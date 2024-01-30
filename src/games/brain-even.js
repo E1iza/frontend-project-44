@@ -1,5 +1,5 @@
 import getNumberRandom from '../utils.js';
-import { playGame } from '../index.js';
+import playGame from '../index.js';
 
 function getNumber() {
   const expression = getNumberRandom();

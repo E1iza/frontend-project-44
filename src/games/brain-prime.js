@@ -1,5 +1,5 @@
 import getNumberRandom from '../utils.js';
-import { playGame } from '../index.js';
+import playGame from '../index.js';
 
 function isPrime(num) {
   for (let i = 2; i < num; i += 1) {
