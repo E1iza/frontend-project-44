@@ -1,4 +1,5 @@
 import getNumberRandom from '../utils.js';
+import { playGame } from '../index.js';
 
 const calculateStringOperator = (a, b, operator) => {
   switch (operator) {
@@ -12,7 +13,7 @@ const calculateStringOperator = (a, b, operator) => {
       return false;
   }
 };
-export default function getExpressionRandom() {
+function getExpressionRandom() {
   const number1 = getNumberRandom();
   const number2 = getNumberRandom();
   const operators = ['+', '-', '*'];
@@ -24,4 +25,8 @@ export default function getExpressionRandom() {
     return false;
   }
   return [expression, answer];
+}
+
+export default function playBrainCalc() {
+  playGame('What is the result of the expression?', getExpressionRandom);
 }

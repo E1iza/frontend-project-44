@@ -1,6 +1,7 @@
 import getNumberRandom from '../utils.js';
+import { playGame } from '../index.js';
 
-export default function getGcd() {
+function getGcd() {
   const firstNumber = getNumberRandom(1);
   const secondNumber = getNumberRandom(1);
   const expression = `${firstNumber} ${secondNumber}`;
@@ -13,4 +14,8 @@ export default function getGcd() {
   }
   const answer = min;
   return [expression, answer];
+}
+
+export default function playBrainGCD() {
+  playGame('Find the greatest common divisor of given numbers.', getGcd);
 }

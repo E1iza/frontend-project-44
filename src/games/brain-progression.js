@@ -1,6 +1,7 @@
 import getNumberRandom from '../utils.js';
+import { playGame } from '../index.js';
 
-export default function getProgression(step = [-15, 15], startInt = [-100, 100], countItems = 10) {
+function getProgression(step = [-15, 15], startInt = [-100, 100], countItems = 10) {
   const stepValue = getNumberRandom(step[0], step[1]);
   const startItem = getNumberRandom(startInt[0], startInt[1]);
   const countItemsValue = getNumberRandom(5, countItems);
@@ -12,4 +13,8 @@ export default function getProgression(step = [-15, 15], startInt = [-100, 100],
   const itemSkip = progression[indexItemSkip];
   progression[indexItemSkip] = '..';
   return [progression.join(' '), itemSkip];
+}
+
+export default function playBrainProgression() {
+  playGame('What number is missing in the progression?', getProgression);
 }
