@@ -7,4 +7,5 @@ function getNumber() {
   return [expression, answer];
 }
 
-export default () => playGame('Answer "yes" if the number is even, otherwise answer "no".', getNumber);
+const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
+export default () => playGame(gameDescription, getNumber);

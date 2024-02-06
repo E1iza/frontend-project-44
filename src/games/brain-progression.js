@@ -17,4 +17,5 @@ function getProgression(step = [-15, 15], startInt = [-100, 100], countItems = 1
   return [progression.join(' '), itemSkip];
 }
 
-export default () => playGame('What number is missing in the progression?', getProgression);
+const gameDescription = 'What number is missing in the progression?';
+export default () => playGame(gameDescription, getProgression);

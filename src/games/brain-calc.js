@@ -24,4 +24,5 @@ function getExpressionRandom() {
   return [expression, answer];
 }
 
-export default () => playGame('What is the result of the expression?', getExpressionRandom);
+const gameDescription = 'What is the result of the expression?';
+export default () => playGame(gameDescription, getExpressionRandom);

@@ -16,4 +16,5 @@ function getGcd() {
   return [expression, answer];
 }
 
-export default () => playGame('Find the greatest common divisor of given numbers.', getGcd);
+const gameDescription = 'Find the greatest common divisor of given numbers.';
+export default () => playGame(gameDescription, getGcd);
