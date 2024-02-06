@@ -7,6 +7,4 @@ function getNumber() {
   return [expression, answer];
 }
 
-export default function playBrainEven() {
-  playGame('Answer "yes" if the number is even, otherwise answer "no".', getNumber);
-}
+export default () => playGame('Answer "yes" if the number is even, otherwise answer "no".', getNumber);

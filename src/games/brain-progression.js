@@ -9,12 +9,12 @@ function getProgression(step = [-15, 15], startInt = [-100, 100], countItems = 1
   for (let i = 0; i < countItemsValue; i += 1) {
     progression.push(progression[i] + stepValue);
   }
-  const indexItemSkip = getNumberRandom(0, progression.length - 1);
+  const startIndex = 0;
+  const stopIndex = progression.length - 1;
+  const indexItemSkip = getNumberRandom(startIndex, stopIndex);
   const itemSkip = progression[indexItemSkip];
   progression[indexItemSkip] = '..';
   return [progression.join(' '), itemSkip];
 }
 
-export default function playBrainProgression() {
-  playGame('What number is missing in the progression?', getProgression);
-}
+export default () => playGame('What number is missing in the progression?', getProgression);

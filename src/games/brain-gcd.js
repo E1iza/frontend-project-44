@@ -16,6 +16,4 @@ function getGcd() {
   return [expression, answer];
 }
 
-export default function playBrainGCD() {
-  playGame('Find the greatest common divisor of given numbers.', getGcd);
-}
+export default () => playGame('Find the greatest common divisor of given numbers.', getGcd);
