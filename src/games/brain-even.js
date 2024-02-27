@@ -1,11 +1,11 @@
 import getNumberRandom from '../utils.js';
 import playGame from '../index.js';
 
-const isEven = (num) => (num % 2 === 0 ? 'yes' : 'no');
+const isEven = (num) => (num % 2 === 0);
 
 function getNumber() {
   const question = getNumberRandom();
-  const answer = isEven(question);
+  const answer = isEven(question) ? 'yes' : 'no';
   return [question, answer];
 }
 
