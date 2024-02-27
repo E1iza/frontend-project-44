@@ -18,10 +18,12 @@ function getExpressionRandom() {
   const number1 = getNumberRandom();
   const number2 = getNumberRandom();
   const operators = ['+', '-', '*'];
-  const operatorRandom = operators[getNumberRandom(0, operators.length - 1)];
-  const expression = `${number1} ${operatorRandom} ${number2}`;
+  const startIndex = 0;
+  const stopIndex = operators.length - 1;
+  const operatorRandom = operators[getNumberRandom(startIndex, stopIndex)];
+  const question = `${number1} ${operatorRandom} ${number2}`;
   const answer = calculateStringOperator(number1, number2, operatorRandom);
-  return [expression, answer];
+  return [question, answer];
 }
 
 const gameDescription = 'What is the result of the expression?';

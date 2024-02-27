@@ -7,12 +7,12 @@ function isPrime(num) {
   }
   return num !== 1;
 }
-function getNumber(maxRange = 500) {
+const getNumber = (maxRange = 500) => {
   const minRange = 2;
-  const number = getNumberRandom(minRange, maxRange);
-  const answer = isPrime(number) ? 'yes' : 'no';
-  return [number, answer];
-}
+  const question = getNumberRandom(minRange, maxRange);
+  const answer = isPrime(question) ? 'yes' : 'no';
+  return [question, answer];
+};
 
 const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 export default () => playGame(gameDescription, getNumber);
