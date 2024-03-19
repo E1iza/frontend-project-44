@@ -10,8 +10,7 @@ const calculateStringOperator = (a, b, operator) => {
     case '*':
       return a * b;
     default:
-      console.log('Оператор не определен');
-      return false;
+      throw new Error(`Данный оператор не определен: '${operator}'`);
   }
 };
 function getExpressionRandom() {
