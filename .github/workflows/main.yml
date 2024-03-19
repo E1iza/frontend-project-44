@@ -17,5 +17,3 @@ jobs:
       - run: make install
       - run: make publish
       - run: make lint
-      - name: Publish code coverage
-        uses: paambaati/codeclimate-action@v5.0.0
