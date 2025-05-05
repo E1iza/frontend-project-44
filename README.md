@@ -1,7 +1,3 @@
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/E1iza/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/E1iza/frontend-project-44/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/a04beb7f04046d0d0199/maintainability)](https://codeclimate.com/github/E1iza/frontend-project-44/maintainability)
-
 Проект содержит 5 математических консольных игр.
 1) Game brain-even: игра на определение четности числа.
 ![even](https://github.com/E1iza/frontend-project-44/assets/74045567/3673e916-3332-447e-874b-0e99acc4d47f)
